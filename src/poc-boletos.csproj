@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DinkToPdf" Version="1.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../resources/wk-v0.12.4/64-bit/**"  CopyToOutputDirectory="PreserveNewest" LinkBase="." />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../resources/boleto/**"  CopyToOutputDirectory="PreserveNewest" LinkBase="boleto/" />
+  </ItemGroup>
+
+</Project>
